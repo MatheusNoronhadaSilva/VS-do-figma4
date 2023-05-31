@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+span{
+    font-family: 'Raleway', sans-serif;
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+}
+h2{
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-rows: 82px 1fr;
+    padding-left: 120px;
+    overflow: hidden;
+    background-color: #fdfdfd;
+}
+
+
+
+header{
+    display: flex;
+    background-color: #fdfdfd;
+    padding-top: 32px;
+}
+h1 {
+    font-size: 40px;
+}
+#navegação{
+    display: table;
+    font-size: 22px;
+    padding-left: 200px;
+}
+
+#navegação > span{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 60px;
+}
+#Home{
+    display: table-cell;
+    font-weight: bold;
+}
+#lupa{
+    height: 30px;
+    padding-left: 200px;
+    
+}
+#cesta{
+    right: -68px;
+    height: 50px;
+}
+#Login{
+    display: flex;
+    background-color: #ffe195;
+    border-radius: 25px;
+    position: relative;
+    right: -380px;
+    z-index: +1;
+    height: 60px;
+}
+#Login > span{
+    position: relative;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+    padding-right: 10px;
+    font-size: 23px;
+}
+#Login > img{
+    position: relative;
+    height: 50px;
+    padding-top: 8px;
+    padding-right: 10px;
+    line-height: 90px;
+}
+#Sing{
+    display: flex;
+    border: 1px solid white;
+    border-radius: 25px;
+    position: relative;
+    right: -350px;
+    z-index: +1;
+    height: 60px;
+}
+#Sing > span{
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    padding-right: 10px;
+    color: white;
+    font-size: 23px;
+}
+#Sing > img {
+    height: 50px;
+    padding-right: 15px;
+    padding-left: 10px;
+}
+
+
+main{
+    background-color: #fdfdfd;
+    display: grid;
+    grid-template-areas:
+    "info"
+    "preco"
+    "info2";
+    grid-template-rows: 200px 200px 200px;
+    padding-top: 200px;
+    padding-right: 950px;
+
+}
+#fundo{
+    height: 100vh;
+    width: 600px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#salada1{
+    position: absolute; right: 250px; bottom: 250px;
+    height: 580px;
+    filter: drop-shadow(0px 0px 50px rgba(0 0 0 / 50%));
+    z-index: +1;
+}
+#metadeT{
+    position: absolute; right: 250px; bottom: 250px;
+        filter: drop-shadow(0px 10px 5px rgba(0 0 0 / 100%));
+}
+#pimenta{
+    position: absolute; right: 50px; bottom: 120px;
+    filter: drop-shadow(0px 10px 5px rgba(0 0 0 / 100%));
+}
+#tomate{
+    position: absolute; right: 150px; bottom: 700px;
+    filter: drop-shadow(0px 10px 5px rgba(0 0 0 / 100%));
+}
+#verde{
+    position: absolute; right: 50px; bottom: 400px;
+    filter: drop-shadow(0px 10px 5px rgba(0 0 0 / 100%));
+
+}
+#azeitona{
+    position: absolute; right: 900px; bottom: 400px;
+}
+#resumo{
+    width: 300px;
+    height: 350px;
+    background-color: #ff9900;
+    position: absolute; bottom: 100px; right: 470px;
+    border-radius: 32px;
+    z-index: 0;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 200px;
+}
+#resumo > span {
+
+    font-size: 45px;
+    padding-right: 20px;
+    color: white;
+}
+#resumo > img{
+    height: 50px;
+}
+#resumo > #a{
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+#tempo{
+    background-color: black;
+    width: 250px;
+    height: 50px;
+    border-radius: 32px;
+    display: flex;
+}
+#tempo > img{
+    padding-left: 30px;
+}
+#tempo > span{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+
+#info{
+    grid-area: info;
+    padding-right: 400px;
+}
+h2{
+    font-size: 70px;
+    font-weight: bold;
+}
+#info > span{
+    font-size: 60px;
+}
+#info > p{
+    font-size: 20px;
+    color: #aeaeb9;
+}
+#info > p > p{
+    color: black;
+}
+#preco{
+    grid-area: preco;
+}
+#preco > span{
+    font-size: 50px;
+}
+#preco > span > span{
+    font-weight: bold;
+}
+#quantidade{
+    position: relative;
+    top: 100px;
+    left: -400px;
+}
+#comprar{
+    position: relative;
+    top: 100px;
+    left: -350px;
+}
+#quantidade1{
+    border: 4px solid black;
+    width: 100px;
+}
+#info2{
+    grid-area: info2;
+    text-align: center;
+    display: flex;
+}
+#esquerda{
+    border: 1px solid black;
+    border-radius: 32px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    place-self: center;
+}
+#esquerda > span{
+    font-size: 50px;
+    font-weight: bold;
+}
+#direita{
+    border: 1px solid black;
+    border-radius: 32px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    place-self: center;
+}
+#direita > span{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
